@@ -6,15 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mapa - Twoja Strona</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .map-section img {
-            max-width: 100%;
+     <style>
+        /* Kontener do mapy */
+        .map-container {
+            width: 600px;
+            height: 400px;
+            overflow: auto; /* Pozwala na przewijanie */
+            border: 2px solid #ddd;
+            position: relative;
+        }
+
+        /* Stylizacja obrazu */
+        .map-container img {
+            width: 100%;
             height: auto;
             transition: transform 0.3s ease;
         }
 
-        .map-section img:hover {
-            transform: scale(2.0); /* Powiększenie do 150% */
+        /* Powiększ obraz na hover */
+        .map-container:hover img {
+            transform: scale(2); /* Powiększenie 200% */
+            cursor: grab;
         }
     </style>
 </head>
