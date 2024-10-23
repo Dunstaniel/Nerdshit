@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mapa - Twoja Strona</title>
-    <link rel="stylesheet" href="styles.css">
-     <style>
+    <title>Mapa</title>
+    <style>
         /* Kontener do mapy */
         .map-container {
-            width: 600px;
-            height: 400px;
+            width: 600px; /* Szerokość widoczna dla użytkownika */
+            height: 400px; /* Wysokość widoczna dla użytkownika */
             overflow: auto; /* Pozwala na przewijanie */
             border: 2px solid #ddd;
             position: relative;
         }
 
-        /* Stylizacja obrazu */
+        /* Stylizacja obrazu mapy */
         .map-container img {
             width: 100%;
             height: auto;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Płynne powiększenie */
         }
 
-        /* Powiększ obraz na hover */
+        /* Powiększenie obrazu na hover */
         .map-container:hover img {
-            transform: scale(2); /* Powiększenie 200% */
+            transform: scale(2); /* Powiększenie obrazu o 200% */
             cursor: grab;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nasza lokalizacja</h1>
+        <h1>Mapa</h1>
     </header>
 
     <section class="map-section">
-        <!-- Obraz mapy w formacie PNG -->
-        <img src="mapa.jpeg" alt="Mapa Świata" style="max-width: 100%; height: auto;">
+        <div class="map-container">
+            <!-- Obraz mapy w formacie JPEG -->
+            <img src="mapa.jpg" alt="Mapa">
+        </div>
     </section>
 
     <footer>
-        <!-- Odnośnik powrotny do strony głównej -->
         <a href="index.html">Powrót na stronę główną</a>
     </footer>
 </body>
