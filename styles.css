@@ -11,6 +11,17 @@ body {
     padding: 20px;
 }
 
+a {
+    color: #red; /* Domyślny kolor linku */
+    text-decoration: none; /* Usuń podkreślenie */
+}
+
+a:hover {
+    color: #e74c3c; /* Kolor linku po najechaniu myszką */
+    text-decoration: underline; /* Dodaj podkreślenie po najechaniu */
+}
+
+
 header {
     background: #333;
     color: #fff;
