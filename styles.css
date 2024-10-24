@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: #red; /* Domyślny kolor linku */
+    color: red; /* Domyślny kolor linku */
     text-decoration: none; /* Usuń podkreślenie */
 }
 
