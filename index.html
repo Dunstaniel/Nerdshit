@@ -7,6 +7,26 @@
     <title>Nerdshit News</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
+     <style>
+        /* Styl dla obrazka po boku */
+        .side-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px; /* Szerokość obrazu */
+            height: 100vh;
+            background-image: url('https://static.wikia.nocookie.net/fireemblem/images/7/71/Armor_Bow_FE4.png/revision/latest/thumbnail/width/360/height/450?cb=20230126030144'); /* Wstaw tutaj swoją ścieżkę */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Ustawienie w tle */
+        }
+
+        /* Styl dla głównej treści */
+        .content {
+            margin-left: 220px; /* Odstęp od obrazu */
+            padding: 20px;
+        }
+
 </head>
 <body>
     <header>
@@ -14,9 +34,17 @@
         <a href="Veilian.html">Zobacz mapę Veilian.</a>
         <a href="uzbrojenie.html">Zobacz uzbrojenie.</a>
     </header>
-    
+    <div class="side-image"></div>
+         
     <section class="news-section">
 
+        <article class="news">
+            <h2>Deluleon Master przypomniał:</h2>
+            <p>Pistolety, Karabiny i shotguny są już dostępne dla graczy (rangi jak na łuki), a nie tylko dla Gunthera</p>
+            <p>Bow General LOVE</p>
+            <span class="date">27 października 2024</span>
+        </article>
+        
         <article class="news">
             <h2>Deluleon Master oświadczył:</h2>
             <p>Btw dodałem do gry miotacze ognia, paralizatory, pompy wody, odkurzacze i chłodziarki :3</p>
