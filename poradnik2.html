@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <title>Magia Różdżek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-link a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Ważne informacje o magii różdżek</h1>
+
+        <p>
+            Głównym zamysłem tej magii są statusy, leczenie oraz wszystko, co może być użyteczne, a nie pasuje gdzie indziej.
+        </p>
+        <p>
+            Ich główna mechanika polega na tym, że po użyciu 3 różnych różdżek w danej turze powoduje, że użycie każdej innej jest pozbawione kosztów many.
+        </p>
+    </div>
+    <div class="content">
+<table>
+    <tr>
+        <td>Rank</td>
+        <td>Name</td>
+        <td>Usage</td>
+        <td>Casting Time</td>
+        <td>Calculation</td>
+        <td>Mp usage</td>
+        <td>W.exp</td>
+        <td>Weight</td>
+        <td>Cost </td>
+        <td>Sell</td>
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>Cure</td>
+        <td>Heals HP</td>
+        <td>1</td>
+        <td>1 Mag/1 HP</td>
+        <td>5</td>
+        <td>1</td>
+        <td>1</td>
+        <td>150</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <td>E+</td>
+        <td>Mend</td>
+        <td>Heals HP</td>
+        <td>2</td>
+        <td>1 Mag/2 HP</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>310</td>
+        <td>78</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Restore</td>
+        <td>Cures status ailments</td>
+        <td>1</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>2</td>
+        <td>650</td>
+        <td>163</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Barrier </td>
+        <td>Increase allies RES (-1 per turn)</td>
+        <td>1</td>
+        <td>RES/2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>2</td>
+        <td>650</td>
+        <td>163</td>
+    </tr>
+    <tr>
+        <td>D+</td>
+        <td>Torch</td>
+        <td>Exchange MP for a Torch</td>
+        <td>1</td>
+        <td>-</td>
+        <td>5</td>
+        <td>6</td>
+        <td>3</td>
+        <td>1 300</td>
+        <td>325</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>Sleep</td>
+        <td>Put enemy to sleep</td>
+        <td>5</td>
+        <td>Mag - E.Res=%</td>
+        <td>20</td>
+        <td>57</td>
+        <td>5</td>
+        <td>2 600</td>
+        <td>650</td>
+    </tr>
+    <tr>
+        <td>C+</td>
+        <td>Silence</td>
+        <td>Silence the enemy</td>
+        <td>5</td>
+        <td>Mag - E.Res=%</td>
+        <td>20</td>
+        <td>57</td>
+        <td>6</td>
+        <td>5 300</td>
+        <td>1325</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Berserk </td>
+        <td>Berserk enemy</td>
+        <td>5</td>
+        <td>Mag - E.Res=%</td>
+        <td>20</td>
+        <td>57</td>
+        <td>7</td>
+        <td>11 000</td>
+        <td>2750</td>
+    </tr>
+    <tr>
+        <td>B+</td>
+        <td>Freeze</td>
+        <td>Freeze enemy</td>
+        <td>5</td>
+        <td>Mag - E.Res=%</td>
+        <td>20</td>
+        <td>57</td>
+        <td>8</td>
+        <td>21 000</td>
+        <td>5250</td>
+    </tr>
+    <tr>
+        <td>B+</td>
+        <td>Slow</td>
+        <td>Decrease enemies INC by 10 till the end of this turn</td>
+        <td>5</td>
+        <td>Mag - E.Res=%</td>
+        <td>25</td>
+        <td>57</td>
+        <td>8</td>
+        <td>21 000</td>
+        <td>5250</td>
+    </tr>
+    <tr>
+        <td>B+</td>
+        <td>Haste</td>
+        <td>Increase allies INC by 10 till the end of this turn</td>
+        <td>5</td>
+        <td>-</td>
+        <td>25</td>
+        <td>57</td>
+        <td>8</td>
+        <td>21 000</td>
+        <td>5250</td>
+    </tr>
+    <tr>
+        <td>B+</td>
+        <td>Enfeeble</td>
+        <td>Decrease enemies DEF, RES and ATK</td>
+        <td>5</td>
+        <td>RES/10</td>
+        <td>25</td>
+        <td>57</td>
+        <td>8</td>
+        <td>21 000</td>
+        <td>5250</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Return</td>
+        <td>Return to last visited city</td>
+        <td>5</td>
+        <td>-</td>
+        <td>10</td>
+        <td>1</td>
+        <td>6</td>
+        <td>42 000</td>
+        <td>10500</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Comet </td>
+        <td>Deal AoE Flat Non elemental DMG to all enemies</td>
+        <td>8</td>
+        <td>Flat DMG = RES</td>
+        <td>30</td>
+        <td>57</td>
+        <td>10</td>
+        <td>42 000</td>
+        <td>10 500</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Stop</td>
+        <td>Decrease enemies INC to 0 till the end of this turn (doesn&#39;t work with topple)</td>
+        <td>8</td>
+        <td>Mag - E.Res=%</td>
+        <td>50</td>
+        <td>57</td>
+        <td>10</td>
+        <td>42 000</td>
+        <td>10 500</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Recover</td>
+        <td>Full HP heal</td>
+        <td>8</td>
+        <td>Full Heal</td>
+        <td>25</td>
+        <td>23</td>
+        <td>6</td>
+        <td>42 000</td>
+        <td>10500</td>
+    </tr>
+    <tr>
+        <td>A+</td>
+        <td>Warp </td>
+        <td>Warp a person around a level</td>
+        <td>8</td>
+        <td>-</td>
+        <td>20</td>
+        <td>42</td>
+        <td>10</td>
+        <td>85 000</td>
+        <td>21250</td>
+    </tr>
+    <tr>
+        <td>A+</td>
+        <td>Rewarp</td>
+        <td>Warp yourself around a level</td>
+        <td>8</td>
+        <td>-</td>
+        <td>20</td>
+        <td>42</td>
+        <td>10</td>
+        <td>85 000</td>
+        <td>21250</td>
+    </tr>
+    <tr>
+        <td>A+</td>
+        <td>Physic</td>
+        <td>Heal HP with no AoE nerfs</td>
+        <td>8</td>
+        <td>1 Mag/ 1 HP</td>
+        <td>20</td>
+        <td>28</td>
+        <td>10</td>
+        <td>85 000</td>
+        <td>21250</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>Hand&#39;s of Time</td>
+        <td>Turn back time to the begining of either this turn or this fight</td>
+        <td>15</td>
+        <td>-</td>
+        <td>75 (Can&#39;t be regenerated till the end of the fight)</td>
+        <td>-</td>
+        <td>25</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>Holy Maiden </td>
+        <td>Full AOE heal</td>
+        <td>15</td>
+        <td>Full Heal</td>
+        <td>30</td>
+        <td>-</td>
+        <td>7</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+</table>
+    </div>
+    <div class="back-link">
+        <a href="hometut.html">Powrót do listy poradników</a>
+    </div>
+
+</body>
+</html>
