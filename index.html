@@ -13,8 +13,18 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 400px; /* Szerokość obrazu */
-            height: 100vh;
+            width: 600px; /* Szerokość obrazu */
+            height: 150vh;
+            background-image: url('bgen.jpg'); /* Wstaw tutaj swoją ścieżkę */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Ustawienie w tle */
+        }
+          .right-image {
+            right: 0;
+            transform: scaleX(-1); /* Przerzuca obraz w poziomie */
+            width: 600px; /* Szerokość obrazu */
+            height: 150vh;
             background-image: url('bgen.jpg'); /* Wstaw tutaj swoją ścieżkę */
             background-size: cover;
             background-position: center;
