@@ -48,6 +48,56 @@
         .back-link a:hover {
             background-color: #0056b3;
         }
+         }
+
+        /* Stylizacja tabeli */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
